@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>essai</title>
+</head>
+<body>
+
+	<form action="traitement.php" method="POST">
+
+		<p><label for="nom">Votre nom : </label><input type="text" name="nom" id=nom maxlength="10" placeholder="Votre nom à renseigner ici"></p>
+		<p><label for="password">Votre mot de passe : </label><input type="password" name="" id="password"></p>
+		<p><textarea rows="5" cols="10">Votre message</textarea></p>
+		<p><label for="email"></label><input type="email" id="email" name="email"></p>
+		<p><label for="quantite">Quantité commandée : </label><input type="number" name="quantite" id="quantite" min="0" max="10" step="1"></p>
+		<p><label for="marge">Votre marge de flexibilité : </label><input type="range" name="quantite" id="quantite" min="0" max="10" step="1"></p>
+		<p>
+		    BOUTONS RADIO Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+		    <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
+		    <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
+		    <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
+		    <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
+		</p>
+		<p>
+       CHECK BOX Cochez les aliments que vous aimez manger :<br />
+       		<input type="checkbox" name="frites" id="frites" checked /> <label for="frites">Frites</label><br />
+       		<input type="checkbox" name="steak" id="steak" /> <label for="steak">Steak haché</label><br />
+       		<input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">Epinards</label><br />
+       		<input type="checkbox" name="huitres" id="huitres" /> <label for="huitres">Huitres</label>
+		</p>
+		<p>
+       		<label for="pays">Dans quel pays habitez-vous ?</label><br />
+       		<select name="pays" id="pays">
+	           	<optgroup label="Europe">
+    	           	<option value="france" selected>France</option>
+        	       	<option value="espagne">Espagne</option>
+            	   	<option value="italie">Italie</option>
+         	      	<option value="royaume-uni">Royaume-Uni</option>
+	           	</optgroup>
+    		   	<optgroup label="Amérique">
+            	   	<option value="canada">Canada</option>
+    	           	<option value="etats-unis">Etats-Unis</option>
+        	   	</optgroup>
+        	   	<optgroup label="Asie">
+            	   	<option value="chine">Chine</option>
+               		<option value="japon">Japon</option>
+          		</optgroup>
+    		</select>
+       	</p>
+       	<fieldset>
+       		<legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
+
+       		<label for="nom">Quel est votre nom ?</label>
+       		<input type="text" name="nom" id="nom" />
+
+       		<label for="prenom">Quel est votre prénom ?</label>
+       		<input type="text" name="prenom" id="prenom" />
+ 
+       		<label for="email">Quel est votre e-mail ?</label>
+       		<input type="email" name="email" id="email" />
+
+   		</fieldset>
+ 
+   		<fieldset>
+       		<legend>Votre souhait</legend> <!-- Titre du fieldset -->
+ 
+       		<p>	Faites un souhait que vous voudriez voir exaucé :
+
+           		<input type="radio" name="souhait" value="riche" id="riche" /> <label for="riche">Etre riche</label>
+           		<input type="radio" name="souhait" value="celebre" id="celebre" /> <label for="celebre">Etre célèbre</label>
+           		<input type="radio" name="souhait" value="intelligent" id="intelligent" /> <label for="intelligent">Etre <strong>encore</strong> plus intelligent</label>
+           		<input type="radio" name="souhait" value="autre" id="autre" /> <label for="autre">Autre...</label>
+       		</p>
+ 
+			<p>
+           		<label for="precisions">Si "Autre", veuillez préciser :</label>
+           		<textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+       		</p>
+   		</fieldset>
+
+	</form>
+
+</body>
+</html>
